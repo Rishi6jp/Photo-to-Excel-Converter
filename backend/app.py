@@ -31,7 +31,7 @@ async def upload_file(file: UploadFile = File(...)):
         return {"error": f"Failed to open image: {str(e)}"}
 
     # ✅ Resize the image (scale down to reduce Excel size)
-    scale_factor = 0.5
+    scale_factor = 0.25
     img = img.resize(
         (int(img.width * scale_factor), int(img.height * scale_factor)),
         Image.NEAREST
