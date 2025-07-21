@@ -21,7 +21,7 @@ export default function Home() {
 
     try {
       setLoading(true)
-      const response = await fetch('https://photo-to-excel-converter.onrender.com/upload-image/', {
+      const response = await fetch('http://127.0.0.1:8000/upload-image/', {
         method: 'POST',
         body: formData,
       })
