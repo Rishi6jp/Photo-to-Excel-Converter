@@ -53,12 +53,15 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center p-6">
       <h1 className="text-3xl font-bold mb-6">🧩 Pixel Art Excel Generator</h1>
       
-      <input
-        type="file"
-        accept="image/*"
-        onChange={handleFileChange}
-        className="mb-4"
-      />
+      <div className='border flex justify-center p-2 mb-4 rounded-xl hover:bg-gray-100'>
+        <input
+          type="file"
+          accept="image/*"
+          onChange={handleFileChange}
+          className=""
+        />
+      </div>
+
 
       <button
         onClick={handleUpload}
