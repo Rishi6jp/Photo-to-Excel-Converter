@@ -39,7 +39,7 @@ async def upload_file(file: UploadFile = File(...)):
     print("✅ [TIME] Image loaded and converted in:", load_time - read_time, "seconds")
 
     # Resize image with nearest-neighbor (preserve pixel art look)
-    scale_factor = 0.1 # ⬅️ Slightly reduced for performance
+    scale_factor = 0.35 # ⬅️ Slightly reduced for performance
     img = img.resize(
         (max(1, int(img.width * scale_factor)), max(1, int(img.height * scale_factor))),
         Image.NEAREST
